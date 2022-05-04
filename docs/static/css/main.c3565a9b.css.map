@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.c3565a9b.css","mappings":"AAAA,KAEI,wBAAoC,CADpC,WAEJ,CAEA,MACI,iDACJ","sources":["styles/styles.css"],"sourcesContent":["body{\r\n    margin: 50px;\r\n    background-color: rgb(229, 231, 231);\r\n}\r\n\r\n.card {\r\n    box-shadow: 2px 10px 10px 5px rgba(124, 213, 255, 0.2);\r\n}\r\n\r\n"],"names":[],"sourceRoot":""}

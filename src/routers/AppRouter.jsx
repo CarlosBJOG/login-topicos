@@ -19,6 +19,7 @@ export const AppRouter = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const resp = useSelector( state => state.auth);
     const { uid } = resp;
+    
     useEffect(() => {
         
         const user = JSON.parse( localStorage.getItem('user')  );
