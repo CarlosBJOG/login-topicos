@@ -4,6 +4,7 @@ import { startLogout } from '../../actions/auth';
 
 export const HomeScreen = () => {
   const dispatch = useDispatch();
+  const { name } = useSelector( state => state.auth);
   
   const handleLogOut = () => {
       dispatch( startLogout() );
@@ -11,7 +12,7 @@ export const HomeScreen = () => {
 
   return (
     <div>
-        <h1>HomeScreen</h1>
+        <h1>HomeScreen: <span className="text-muted">{ name }</span></h1>
         <button
           className="btn btn-primary"
           onClick={ handleLogOut }

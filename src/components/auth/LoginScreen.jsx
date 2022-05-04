@@ -1,7 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import '../../styles/styles.css';
-import { useDispatch, useSelector} from 'react-redux';
+import { useDispatch} from 'react-redux';
 import { useForm } from '../../hooks/useForm';
 import { startLogin } from '../../actions/auth';
 
@@ -26,6 +25,7 @@ export const LoginScreen = () => {
         dispatch( startLogin( email, password ) );
         
     }
+
 
     return (
         <>
@@ -52,7 +52,7 @@ export const LoginScreen = () => {
                                     type="password"
                                     name="password" 
                                     className="form-control" 
-                                    placeholder="e-mail"
+                                    placeholder="password"
                                     value = { password }
                                     onChange = { handleInputChange }
                                 />
@@ -60,9 +60,7 @@ export const LoginScreen = () => {
                             </div>
 
                             
-                    
-
-                            
+                          
                             <button 
                                 type="submit" 
                                 className="btn btn-primary btn-block mb-4"
@@ -70,17 +68,7 @@ export const LoginScreen = () => {
                             >Sign in</button>
 
                             
-                            <div className="text-center">
-                            
-                    
-
-                                <button type="button" className="btn btn-link btn-floating mx-1">
-                                <i className="fab fa-google"></i>
-                                </button>
-
-
-                    
-                            </div>
+     
                         </form>
                     </div>
                 </div>
