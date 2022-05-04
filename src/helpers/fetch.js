@@ -1,4 +1,5 @@
-const baseUrl = "http://localhost:8080/api";
+// const baseUrl = "http://localhost:8080/api";
+const baseUrl = "https://login-backtopicos.herokuapp.com/api"
 
 export const fetchSinToken = async ( endpoint, data, method = 'GET') => {
 
